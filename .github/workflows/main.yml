@@ -10,8 +10,8 @@ jobs:
       uses: appleboy/ssh-action@master
       with:
         host: ${{ secrets.PRIVATE_HOST }}
-        username: ubuntu
+        username: 'ubuntu'
         password: ${{ secrets.PRIVATE_KEY }}
-        port: 22
+        port: '22'
         script: whoami
                 
