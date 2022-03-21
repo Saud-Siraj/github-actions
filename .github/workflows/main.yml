@@ -14,5 +14,5 @@ jobs:
         password: ${{ secrets.PRIVATE_KEY }}
         port: '22'
         script: whoami
-                mkdir 'New_rep'
+                mkdir 'Repo'
                 
