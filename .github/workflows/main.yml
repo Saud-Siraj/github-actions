@@ -15,4 +15,5 @@ jobs:
         port: ${{ secrets.PRIVATE_PORT }}
         script:
           whoami
-          mkdir 'new_repo'
+          cd /home/ubuntu
+          mkdir new_repo
