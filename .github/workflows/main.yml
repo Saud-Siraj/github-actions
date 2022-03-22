@@ -14,7 +14,6 @@ jobs:
         key: ${{ secrets.PRIVATE_KEY }}
         port: ${{ secrets.PRIVATE_PORT }}
         script: |
-               sudo su
-               ./script.sh
+                 sudo ./script.sh
        
       
