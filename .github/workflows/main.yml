@@ -17,5 +17,5 @@ jobs:
         proxy_username: ${{ secrets.PROXY_USER }}        
         script: |
                 whoami
-                ssh PROXY_HOST@PROXY
+                ssh proxy_host@proxy_username
                 
