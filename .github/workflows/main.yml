@@ -13,8 +13,10 @@ jobs:
        username: ${{ secrets.PRIVATE_USER }}
        key: ${{ secrets.PRIVATE_KEY }}
        port: ${{ secrets.PRIVATE_PORT }}
+       proxy_host: ${{ secrets.PROXY_HOST }}
+       proxy_username: ${{secrets.PROXY_USER }}
+       proxy_key: ${{secrets.PROXY_KEY }}
+       proxy_port: ${{secrets.PROXY_PORT }}
        script: |
               whoami 
-              ssh tgsuser@50.237.37.4
-              cd home/ubuntu
-              mkdir abc
+              
