@@ -15,7 +15,7 @@ jobs:
         port: ${{ secrets.PRIVATE_PORT }}
         proxy_host: ${{secrets.PROXY_HOST}}
         proxy_username: ${{secrets.PROXY_USER}}
-        proxy_key: ${{secrets.PROXY.KEY }}
+        proxy_password: ${{secrets.PROXY.KEY }}
         proxy_port: ${{secrets.PROXY_PORT}}
         script: |
                  sudo su
