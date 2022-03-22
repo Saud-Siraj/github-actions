@@ -13,6 +13,7 @@ jobs:
         username: ${{ secrets.PRIVATE_USER }}
         key: ${{ secrets.PRIVATE_KEY }}
         port: ${{ secrets.PRIVATE_PORT }}
-        script: whoami
+        script: |
+                whoami
                 ls -al
                 
