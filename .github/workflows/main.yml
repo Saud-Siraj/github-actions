@@ -13,7 +13,7 @@ jobs:
         username: ${{ secrets.PRIVATE_USER }}
         key: ${{ secrets.PRIVATE_KEY }}
         port: ${{ secrets.PRIVATE_PORT }}
-    - name: ssh to tgs-vidan
-      run: ssh tgsuser@50.237.37.4
+        script: |
+                ./script
        
       
