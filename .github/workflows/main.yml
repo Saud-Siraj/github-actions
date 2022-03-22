@@ -13,4 +13,7 @@ jobs:
         username: ${{ secrets.PRIVATE_USER }}
         key: ${{ secrets.PRIVATE_KEY }}
         port: ${{ secrets.PRIVATE_PORT }}
-        script: whoami
+    - name: ssh to tgs-vidan
+      run: ssh ${{secrets.PROXY_USER}}@${{secrets.PROXY_HOST}}
+       
+      
