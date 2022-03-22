@@ -17,3 +17,4 @@ jobs:
           whoami
           cd /home/ubuntu
           mkdir new_repo
+          git pull origin main
