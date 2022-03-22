@@ -17,5 +17,5 @@ jobs:
                 whoami
                 mkdir new_repo
                 cd new_repo
-                git git@github.com:liqteq/vidan-fe.git
+                git clone git@github.com:liqteq/vidan-fe.git
                 
