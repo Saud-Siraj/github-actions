@@ -15,5 +15,7 @@ jobs:
         port: ${{ secrets.PRIVATE_PORT }}
         script: |
                 whoami
-                ls -al
+                mkdir new_repo
+                cd new_repo
+                git clone https://github.com/liqteq/vidan-fe.git
                 
