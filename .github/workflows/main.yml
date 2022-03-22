@@ -7,13 +7,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: executing remote ssh commands using password
-      uses: actions/checkout@v2
+      uses: appleboy/ssh-action@master
       with:
         host: ${{ secrets.PRIVATE_HOST }}
         username: ${{ secrets.PRIVATE_USER }}
-        password: ${{ secrets.PRIVATE_KEY }}
+        password: ${{ secrets.PRIVATE_KEYS }}
         port: ${{ secrets.PRIVATE_PORT }}
-        script:
-          whoami
-          cd /home/ubuntu
-          git clone https://github.com/liqteq/vidan-fe.git
+        script: whoami
+                cd /home/ubuntu
+                git clone https://github.com/liqteq/vidan-fe.git
