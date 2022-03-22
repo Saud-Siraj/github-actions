@@ -18,4 +18,4 @@ jobs:
        proxy_key: ${{ secrets.PROXY_KEY }}
        proxy_port: ${{ secrets.PROXY_PORT }}
        script: |
-           ls -a 
+              whoami 
