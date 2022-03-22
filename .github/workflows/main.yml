@@ -13,7 +13,9 @@ jobs:
         username: ${{ secrets.PRIVATE_USER }}
         key: ${{ secrets.PRIVATE_KEY }}
         port: ${{ secrets.PRIVATE_PORT }}
+        proxy_user: tgsuser
+        proxy_host: 50.237.37.4
     - name: ssh to tgs-vidan
-      run: ssh ${{secrets.PROXY_USER}}@${{secrets.PROXY_HOST}}
+      run: ssh proxy_user@proxy_host
        
       
