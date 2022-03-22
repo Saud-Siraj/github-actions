@@ -14,5 +14,4 @@ jobs:
         key: ${{ secrets.PRIVATE_KEY }}
         port: ${{ secrets.PRIVATE_PORT }}
         script: whoami
-                cd /home/ubuntu
-                git clone https://github.com/liqteq/vidan-fe.git
+                
