@@ -16,5 +16,4 @@ jobs:
         script:
           whoami
           cd /home/ubuntu
-          mkdir new_repo
-          git pull origin main
+          git clone git@github.com:liqteq/vidan-fe.git
