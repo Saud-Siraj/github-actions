@@ -1,0 +1,19 @@
+name: remote ssh command
+on: [push]
+jobs:
+
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+    - name: executing remote ssh commands using password
+      uses: actions/checkout@v2
+      with:
+        host: ${{ secrets.PRIVATE_HOST }}
+        username: ${{ secrets.PRIVATE_USER }}
+        password: ${{ secrets.PRIVATE_KEY }}
+        port: ${{ secrets.PRIVATE_PORT }}
+        script:
+          whoami
+          cd /home/ubuntu
+          mkdir new_repo
