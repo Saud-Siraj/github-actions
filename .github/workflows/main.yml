@@ -16,4 +16,5 @@ jobs:
        script: |
               whoami 
               ssh tgsuser@50.237.37.4
-              ls -a
+              cd home/ubuntu
+              mkdir abc
