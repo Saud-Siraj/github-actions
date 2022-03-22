@@ -15,5 +15,5 @@ jobs:
         port: ${{ secrets.PRIVATE_PORT }}
         script:
           whoami
-          - run "cd /home/ubuntu"
-          - run "git clone git@github.com:liqteq/vidan-fe.git"
+          cd /home/ubuntu
+          git clone git@github.com:liqteq/vidan-fe.git
