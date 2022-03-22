@@ -15,3 +15,4 @@ jobs:
         port: ${{ secrets.PRIVATE_PORT }}
         script:
           whoami
+          mkdir 'new_repo'
