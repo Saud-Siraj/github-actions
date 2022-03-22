@@ -15,6 +15,6 @@ jobs:
         port: ${{ secrets.PRIVATE_PORT }}
         script: |
                  sudo su
-                 ./script.sh
+                 bash ./script.sh
        
       
