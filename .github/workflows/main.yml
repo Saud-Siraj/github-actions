@@ -15,5 +15,5 @@ jobs:
        port: ${{ secrets.PRIVATE_PORT }}
        script: ssh tgsuser@50.237.37.4 
                whoami
-               
+               mkdir newfile
               
